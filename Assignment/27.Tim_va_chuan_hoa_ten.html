@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cho một mảng là một tập hợp các học viên trong lớp REACTJS, mảng là một tập hợp object của học viên gồm 3 thông tin: id, firstName, lastName, và age. Hãy đưa tên và họ về chuẩn tên với ký tự đầu tiên của tên Viết Hoa và tìm tất cả học viên có tên tồn tại chữ cái “a” hoặc “A” và tên dài hơn hoặc bằng 3 ký tự.</title>
+</head>
+<body>
+<script>
+    let students = [
+        {
+            id: "T3HXX1",
+            firstName: "NgAN",
+            lastName: "Duong Thuy"
+        },
+        {
+            id: "T3HXX2",
+            firstName: "Ha",
+            lastName: "Do Thi Thu"
+        },
+        {
+            id: "T3HXX5",
+            firstName: "Minh",
+            lastName: "Nguyen Nhat"
+        }
+    ]
+    for (let i = 0; i<students.length;i++){
+        let a = students[i].firstName.slice(0,1).toUpperCase()
+        let b = students[i].firstName.slice(1).toLowerCase()
+        let newStr = a +b
+        let arrName = students[i].firstName.split("")
+        if (students[i].firstName.length>3){
+            for (let j = 0 ; j < arrName.length; j++){
+                if (arrName[j] === "a" || arrName[j] ==="A"){
+                    students[i].firstName =newStr;
+                    console.log(students[i])
+                }
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>
