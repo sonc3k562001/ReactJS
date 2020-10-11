@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SumArray</title>
+</head>
+<body>
+<script type="text/javascript">
+    var a =[1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1],sum =0;
+    for (var i  = 0 ; i<a.length;i++){
+        sum+=a[i]
+    }
+    document.write(`Sum: ${sum}`)
+
+    //hàm reduce
+    let sum2 = a.reduce((x, y) => x + y);
+    document.write("<br>",`Sum2: ${sum2}`)
+</script>
+</body>
+</html>

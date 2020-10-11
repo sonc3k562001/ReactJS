@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var arr =[1,2,3,4,5,6,7,8,6,7,9,9,9,9,9],count =0;
+    var Count_arr=[]
+    for (var i = 0;i<arr.leng;i++){
+        for (var j = 0; j<arr.length;j++){
+            if (arr[i]==arr[j]){
+                count++;
+            }
+        }
+        Count_arr[i]=count;
+        document.write(Count_arr)
+    }
+
+
+    var max = Count_arr[0]
+    for (var i =1;i<Count_arr.length;i++){
+        if (max<Count_arr[i]){
+            max = Count_arr[i];
+        }
+    }
+    document.write(max)
+</script>
+</body>
+</html>

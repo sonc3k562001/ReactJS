@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số lơn thứ 2</title>
+</head>
+<body>
+<script>
+    // let a = [1,2,3,4,5,6,7,8,9,9,9,8,7,6,5,4,3,2,1];
+    let a =[1,1,1,1]
+    let newarr = a.filter((item, index) => {
+        return a.indexOf(item) === index
+    });
+    let number = newarr.sort();
+    if (number.length >1){
+        indexSecont = number.length-2
+        document.write(number[indexSecont])
+    }else if (number.length===1){
+        document.write("-1")
+    }
+
+</script>
+</body>
+</html>

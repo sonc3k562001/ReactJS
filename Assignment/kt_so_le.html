@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kt so le</title>
+</head>
+<body>
+<script type="text/javascript">
+    var n = prompt("enter so",1234);
+    function check(n){
+        flag = true;
+        if (n %2 == 0){
+            flag = false
+        }else {
+            var temp = n%10;
+            while (n>0){
+                if (n%10==0){
+                    flag= false;
+                    break
+                }
+                else {
+                    if (temp % 2 != 0){
+                        flag = true;
+
+                    }
+                    else {
+                        flag= false;
+                    }
+                }
+                n/=10;
+            }
+        }
+        if (flag === true){
+            document.write('ok')
+        }else {
+            document.write('no')
+        }
+
+    }
+    check(n)
+</script>
+</body>
+</html>

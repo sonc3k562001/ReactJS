@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lấy id facebook</title>
+</head>
+<body>
+<script type="text/javascript">
+    var link = prompt("hello",'https://www.facebook.com/NguyenGiangSOn/ksksks/233')
+    newstr = link.replace("https://www.facebook.com/",'')
+    ind= newstr.indexOf('/')
+    var totalStr;
+    if (ind == -1){
+        totalStr = newstr
+    }else {
+        totalStr = newstr.slice(0,ind)
+    }
+    document.write('id Facebook:',totalStr)
+</script>
+
+</body>
+</html>
